@@ -1,14 +1,13 @@
-const http = require('http');
-const port = 3000;
+const app = () => {
+  const song = document.querySelector('.song');
+  const play =  document.querySelector('.play');
+  const outline = document.querySelector('.moving-outline circle');
+  const video = document.querySelector('.vid-container video');
 
-const server = http.createServer(function(req, res) {
-  res.write('Hello Node');
-});
+  const sounds = document.querySelectorAll('.sound-picker button');
+  const timeDisplay = document.querySelector('.time-display');
+  const outlineLength = outline.getTotalLength();
+  console.log(outlineLength);
+}
 
-server.listen(port, function(error) {
-  if (error) {
-    console.log('Something went wrong', error)
-  } else {
-    console.log('Server is listening on port: ' + port);
-  }
-})
+app(); 
