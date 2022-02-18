@@ -30,7 +30,7 @@
   height: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(-90deg);
   pointer-events: none;
 }
 
@@ -59,7 +59,7 @@
    cursor: pointer;
    border-radius: 5px;
    font-size: 20px;
-   transition: all 0.5s ease;
+   transition: all 0.8s ease;
 }
 
 .time-select button:hover {
@@ -73,13 +73,14 @@
   width: 120px;
   border-radius: 50%;
   padding: 30px;
+  opacity: 0.8;
 }
 
 .sound-picker button:nth-child(1) {
-  background: lightblue;
+  background: lightslategray;
 }
 .sound-picker button:nth-child(2) {
-  background: lightseagreen;
+  background: lightblue;
 }
 .sound-picker button img {
   height: 100%;
